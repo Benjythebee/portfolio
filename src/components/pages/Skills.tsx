@@ -1,5 +1,5 @@
 import { X } from 'lucide-react'
-import { Rating, StickerStar, Heart } from '@smastrom/react-rating'
+import { Rating, StickerStar } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'
 import { useEffect, useState } from 'react'
 export const Skills = ({

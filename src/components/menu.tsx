@@ -7,7 +7,10 @@ import {
   X,
   Link,
   Briefcase,
-  RulerDimensionLine
+  RulerDimensionLine,
+  CakeSliceIcon,
+  GithubIcon,
+  ArrowUpRightIcon
 } from 'lucide-react'
 import { Accordion } from './Accordion'
 import { Timeline } from './pages/Timeline'
@@ -112,6 +115,70 @@ const Sidebar = () => {
                 </div>
               </button>
             </div>
+
+            <Accordion
+              items={[
+                {
+                  title: 'What I am currently working on',
+                  iconSrc: () => <CakeSliceIcon />,
+                  content: (
+                    <>
+                      <div className="flex flex-col gap-1 space-y-2">
+                        <h1 className="text-lg font-bold">TPLDrifters</h1>
+                        <span>
+                          End-to-end 3D avatar creator with Blender-powered
+                          backend
+                        </span>
+                        <button
+                          className="flex w-full justify-center gap-2 rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
+                          onClick={() => {
+                            window.open('https://tpldrifters.com', '_blank')
+                          }}
+                        >
+                          <ArrowUpRightIcon className="size-5" />{' '}
+                          tpldrifters.com
+                        </button>
+                      </div>
+                      <div className="mt-2 flex flex-col gap-1 space-y-2">
+                        <h1 className="text-lg font-bold">Skybuds</h1>
+                        <span>
+                          A personal project integrating ThreeJS, NFTs and
+                          serverless functions
+                        </span>
+                        <button
+                          className="flex w-full justify-center gap-2 rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
+                          onClick={() => {
+                            window.open(
+                              'https://github.com/Benjythebee/skybuds',
+                              '_blank'
+                            )
+                          }}
+                        >
+                          <GithubIcon className="size-5" /> View Repo
+                        </button>
+                      </div>
+                      <div className="mt-2 flex flex-col gap-1 space-y-2">
+                        <h1 className="text-lg font-bold">TongueUp</h1>
+                        <span>
+                          A small helpful mobile app for people in need of a
+                          reminder to put their tongue up on the roof of their
+                          mouth.
+                        </span>
+                        <button
+                          className="flex w-full justify-center gap-2 rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
+                          disabled={true}
+                          onClick={() => {}}
+                        >
+                          <GithubIcon className="size-5" /> Will update Repo
+                          soon!
+                        </button>
+                      </div>
+                    </>
+                  ),
+                  id: 'skybuds'
+                }
+              ]}
+            ></Accordion>
           </div>
 
           {/* Menu Buttons */}
