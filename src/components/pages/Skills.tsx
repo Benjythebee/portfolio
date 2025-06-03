@@ -85,19 +85,6 @@ export const Skills = ({
                       value={skill.competencyRating}
                       readOnly
                     />
-                    {skill.likeRating && (
-                      <Rating
-                        style={{ maxWidth: 100 }}
-                        items={3}
-                        itemStyles={{
-                          itemShapes: Heart,
-                          activeFillColor: '#f57a7f',
-                          inactiveFillColor: '#f5bfc1'
-                        }}
-                        value={skill.likeRating}
-                        readOnly
-                      />
-                    )}
                   </div>
                 </label>
               </div>
@@ -306,5 +293,11 @@ const skills: {
     title: 'web3.js',
     competencyRating: 5,
     likeRating: 1
+  },
+  {
+    category: 'Statistics',
+    title: 'R',
+    competencyRating: 4,
+    likeRating: 3
   }
 ]
