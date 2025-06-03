@@ -215,6 +215,11 @@ const skills: {
     competencyRating: 5,
     likeRating: 2
   },
+  {
+    category: 'Databases',
+    title: 'GraphQL',
+    competencyRating: 4
+  },
   { category: 'Databases', title: 'Redis', competencyRating: 5, likeRating: 5 },
   {
     category: 'Databases',
@@ -231,7 +236,7 @@ const skills: {
   {
     category: 'Cloud & Hosting',
     title: 'AWS',
-    competencyRating: 3,
+    competencyRating: 4,
     likeRating: 1
   },
   {
@@ -256,6 +261,12 @@ const skills: {
     category: 'CI/CD',
     title: 'circleci',
     competencyRating: 5,
+    likeRating: 3
+  },
+  {
+    category: 'CI/CD',
+    title: 'Github Actions',
+    competencyRating: 3,
     likeRating: 3
   },
   {
