@@ -117,7 +117,7 @@ const skills: {
     competencyRating: 5
   },
   {
-    category: 'Programming Languages',
+    category: 'Frameworks',
     title: 'React - Next.JS',
     likeRating: 3,
     competencyRating: 5
@@ -313,6 +313,16 @@ const skills: {
   {
     category: 'Design',
     title: 'Figma',
+    competencyRating: 3
+  },
+  {
+    category: 'Frameworks',
+    title: 'React Native',
+    competencyRating: 4
+  },
+  {
+    category: 'Platform',
+    title: 'Expo',
     competencyRating: 3
   }
 ]
