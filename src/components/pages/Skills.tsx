@@ -299,5 +299,20 @@ const skills: {
     title: 'R',
     competencyRating: 4,
     likeRating: 3
+  },
+  {
+    category: 'Work Management',
+    title: 'Asana',
+    competencyRating: 5
+  },
+  {
+    category: 'Work Management',
+    title: 'Jira',
+    competencyRating: 5
+  },
+  {
+    category: 'Design',
+    title: 'Figma',
+    competencyRating: 3
   }
 ]
