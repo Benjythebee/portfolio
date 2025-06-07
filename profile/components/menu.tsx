@@ -10,7 +10,8 @@ import {
   RulerDimensionLine,
   CakeSliceIcon,
   GithubIcon,
-  ArrowUpRightIcon
+  ArrowUpRightIcon,
+  Mail
 } from 'lucide-react'
 import { Accordion } from './Accordion'
 import { Timeline } from './pages/Timeline'
@@ -283,6 +284,14 @@ const Socials = () => {
         rel="noreferrer"
       >
         <NPMLogo className="size-4" />
+      </a>
+      <a
+        href="mailto:jybenlarcher@gmail.com"
+        target="_blank"
+        className="flex size-8 items-center justify-center rounded-full border-2 border-gray-700 transition-colors duration-300 hover:bg-gray-700"
+        rel="noreferrer"
+      >
+        <Mail size={16} />
       </a>
     </div>
   )
