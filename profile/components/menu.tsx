@@ -14,7 +14,7 @@ import {
 } from 'lucide-react'
 import { Accordion } from './Accordion'
 import { Timeline } from './pages/Timeline'
-import { NPMLogo } from 'assets/npm_logo'
+import { NPMLogo } from '../assets/npm_logo'
 import { Skills } from './pages/Skills'
 
 const Sidebar = () => {

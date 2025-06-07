@@ -1,5 +1,5 @@
-import { BackgroundSkybuds } from 'components/background'
-import Sidebar from 'components/menu'
+import { BackgroundSkybuds } from './components/background'
+import Sidebar from './components/menu'
 
 function App() {
   return (

@@ -1,0 +1,23 @@
+@font-face {
+ font-family: 'Inter';
+ src: url('/font/Inter-VariableFont.ttf') format('ttf');
+}
+@theme {
+  --font-inter: "Inter", "sans-serif"; 
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter';
+}
+
+.root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter';
+}
