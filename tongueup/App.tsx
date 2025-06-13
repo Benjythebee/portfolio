@@ -2,8 +2,9 @@ import { Clock } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { DarkThemeFeature } from './components/feature.darktheme'
 function App() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
+  const languageCode = i18n.language || 'en-GB'
   return (
     <div className="relative flex size-full flex-col overflow-hidden overflow-y-auto bg-gradient-to-tr from-fuchsia-400 to-fuchsia-50">
       <div className="px-4 pt-7 md:px-20">
@@ -11,13 +12,17 @@ function App() {
       </div>
       <div className="px-4 text-center md:px-28">
         <div className="relative flex items-center justify-center text-center">
-          <div className="max-md:absolute max-md:top-1/2">
+          <a
+            className="max-md:absolute max-md:top-1/2"
+            title="Download on the App Store"
+            href={`https://play.google.com/store/apps/details?id=com.jybenlarcher.tongueup&hl=${languageCode}`}
+          >
             <img
-              src={'/' + t('google_play')}
+              src={t('google_play')}
               alt="TongueUp Logo"
               className="scale-[70%] cursor-pointer hover:shadow-xl md:scale-110"
             />
-          </div>
+          </a>
           <div className="flex flex-col gap-0">
             <img
               src={`/` + t('notification_screenshot')}
