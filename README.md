@@ -1,7 +1,25 @@
+# Benjy's Personal Website
 
-# A Personal website in Typescript,react
+A personal website built with **TypeScript** and **React**.
 
-`pnpm i`
+## Getting Started
 
+1. **Install dependencies:**
 
-`pnpm run dev`
+   ```bash
+   pnpm install
+   ```
+
+2. **Start the development server:**
+   ```bash
+   pnpm run dev
+   ```
+
+## Features
+
+- Modern React with TypeScript
+- Fast development workflow with pnpm
+
+## License
+
+MIT
