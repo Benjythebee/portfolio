@@ -17,10 +17,19 @@ import { Accordion } from './Accordion'
 import { Timeline } from './pages/Timeline'
 import { NPMLogo } from '../assets/npm_logo'
 import { Skills } from './pages/Skills'
+import { useSearchParams } from '../utils/useSearchParams'
 
 const Sidebar = () => {
   const [showing, setShowing] = React.useState(false)
+  const searchparams = useSearchParams()
   const [tab, setTab] = React.useState<'timeline' | 'skills' | null>(null)
+
+  React.useEffect(() => {
+    const initialTab = searchparams.t || searchparams.tab || null
+    if (initialTab === 'timeline' || initialTab === 'skills') {
+      setTab(initialTab)
+    }
+  }, [searchparams])
 
   return (
     <>
