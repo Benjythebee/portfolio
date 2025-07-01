@@ -317,6 +317,41 @@ const skills: {
     competencyRating: 5
   },
   {
+    category: 'Platform',
+    title: 'Shopify',
+    competencyRating: 5
+  },
+  {
+    category: 'Platform',
+    title: 'Storyblok',
+    competencyRating: 4
+  },
+  {
+    category: 'Platform',
+    title: 'Squarespace',
+    competencyRating: 5
+  },
+  {
+    category: 'Platform',
+    title: 'Wordpress',
+    competencyRating: 5
+  },
+  {
+    category: 'Payment Processing',
+    title: 'Stripe',
+    competencyRating: 5
+  },
+  {
+    category: 'Payment Processing',
+    title: 'Paypal',
+    competencyRating: 5
+  },
+  {
+    category: 'Payment Processing',
+    title: 'Coinbase Commerce',
+    competencyRating: 5
+  },
+  {
     category: 'Work Management',
     title: 'Jira',
     competencyRating: 5
@@ -332,7 +367,7 @@ const skills: {
     competencyRating: 4
   },
   {
-    category: 'Platform',
+    category: 'Frameworks',
     title: 'Expo',
     competencyRating: 3
   }
