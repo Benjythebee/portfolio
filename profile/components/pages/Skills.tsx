@@ -123,6 +123,18 @@ const skills: {
     competencyRating: 5
   },
   {
+    category: 'Frameworks',
+    title: 'Vue.js',
+    likeRating: 3,
+    competencyRating: 4
+  },
+  {
+    category: 'Frameworks',
+    title: 'Svelte - SvelteKit',
+    likeRating: 3,
+    competencyRating: 1
+  },
+  {
     category: 'Programming Languages',
     title: 'CSS / Tailwind CSS',
     likeRating: 3,
