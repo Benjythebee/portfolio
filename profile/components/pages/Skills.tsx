@@ -140,15 +140,15 @@ const skills: {
     likeRating: 3,
     competencyRating: 5
   },
-  { category: 'Programming Languages', title: 'Rust', competencyRating: 1 },
+  { category: 'Programming Languages', title: 'Rust', competencyRating: 2 },
   {
     category: 'Programming Languages',
     title: 'PHP',
     likeRating: 1,
     competencyRating: 2
   },
-  { category: 'Programming Languages', title: 'Golang', competencyRating: 1 },
-  { category: 'Programming Languages', title: 'C++', competencyRating: 1 },
+  { category: 'Programming Languages', title: 'Golang', competencyRating: 2 },
+  { category: 'Programming Languages', title: 'C#', competencyRating: 2 },
   { category: 'Programming Languages', title: 'Java', competencyRating: 3 },
 
   {
