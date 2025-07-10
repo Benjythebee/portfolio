@@ -11,7 +11,8 @@ import {
   CakeSliceIcon,
   GithubIcon,
   ArrowUpRightIcon,
-  Mail
+  Mail,
+  Circle
 } from 'lucide-react'
 import { Accordion } from './Accordion'
 import { Timeline } from './pages/Timeline'
@@ -176,11 +177,15 @@ const Sidebar = () => {
                         </span>
                         <button
                           className="flex w-full justify-center gap-2 rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
-                          disabled={true}
-                          onClick={() => {}}
+                          disabled={false}
+                          onClick={() => {
+                            window.open(
+                              'https://tongueup.benjylarcher.com/',
+                              '_blank'
+                            )
+                          }}
                         >
-                          <GithubIcon className="size-5" /> Will update Repo
-                          soon!
+                          <Circle className="size-5" /> Checkout
                         </button>
                       </div>
                     </>
