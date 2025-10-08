@@ -11,8 +11,7 @@ import {
   CakeSliceIcon,
   GithubIcon,
   ArrowUpRightIcon,
-  Mail,
-  Circle
+  Mail
 } from 'lucide-react'
 import { Accordion } from './Accordion'
 import { Timeline } from './pages/Timeline'
@@ -169,6 +168,22 @@ const Sidebar = () => {
                         </button>
                       </div>
                       <div className="mt-2 flex flex-col gap-1 space-y-2">
+                        <h1 className="text-lg font-bold">RendrGen</h1>
+                        <span>
+                          A service that offers renders of Digital assets at an
+                          affordable price.
+                        </span>
+                        <button
+                          className="flex w-full justify-center gap-2 rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
+                          disabled={false}
+                          onClick={() => {
+                            window.open('https://rendrgen.com/', '_blank')
+                          }}
+                        >
+                          <ArrowUpRightIcon className="size-5" /> RendrGen.com
+                        </button>
+                      </div>
+                      <div className="mt-2 flex flex-col gap-1 space-y-2">
                         <h1 className="text-lg font-bold">TongueUp</h1>
                         <span>
                           A small helpful mobile app for people in need of a
@@ -185,7 +200,7 @@ const Sidebar = () => {
                             )
                           }}
                         >
-                          <Circle className="size-5" /> Checkout
+                          <ArrowUpRightIcon className="size-5" /> Checkout App
                         </button>
                       </div>
                     </>
@@ -226,6 +241,27 @@ const Sidebar = () => {
                     </div>
                   ),
                   id: 'skybuds'
+                },
+                {
+                  title: 'RendrGen',
+                  iconSrc: './rendrgen_124.png',
+                  content: (
+                    <div className="flex flex-col gap-1 space-y-2">
+                      <span>
+                        An affordable service that offers renders of digital
+                        assets. Perfect for portfolios, listings and more.
+                      </span>
+                      <button
+                        className="w-full rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
+                        onClick={() => {
+                          window.open('https://rendrgen.com/', '_blank')
+                        }}
+                      >
+                        Check Out
+                      </button>
+                    </div>
+                  ),
+                  id: 'RendrGen'
                 },
                 {
                   title: 'Ask ChatGPT about me',

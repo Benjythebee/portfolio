@@ -157,7 +157,7 @@ const skills: {
     category: 'Programming Languages',
     title: 'PHP',
     likeRating: 1,
-    competencyRating: 2
+    competencyRating: 3
   },
   { category: 'Programming Languages', title: 'Golang', competencyRating: 2 },
   { category: 'Programming Languages', title: 'C#', competencyRating: 2 },
@@ -244,6 +244,16 @@ const skills: {
     category: 'Monitoring',
     title: 'Prometheus',
     competencyRating: 4
+  },
+  {
+    category: 'Monitoring',
+    title: 'AWS Cloudwatch',
+    competencyRating: 5
+  },
+  {
+    category: 'Monitoring',
+    title: 'Clarity',
+    competencyRating: 5
   },
   {
     category: 'Cloud & Hosting',
@@ -382,5 +392,10 @@ const skills: {
     category: 'Frameworks',
     title: 'Expo',
     competencyRating: 3
+  },
+  {
+    category: 'Frameworks',
+    title: 'Atlassian forge',
+    competencyRating: 4
   }
 ]
