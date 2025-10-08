@@ -68,7 +68,7 @@ const Sidebar = () => {
         data-active={showing}
         className="group/container absolute right-0 top-0 z-[1] h-screen w-0 transition-all duration-300 data-[active=true]:w-full md:w-1/4 md:min-w-[300px]"
       >
-        <div className="relative flex h-full flex-col items-center overflow-hidden bg-black py-6 text-white ">
+        <div className="relative flex h-full flex-col items-center overflow-y-auto bg-black py-6 text-white ">
           <div>
             {showing && (
               <button
@@ -133,76 +133,9 @@ const Sidebar = () => {
                   iconSrc: () => <CakeSliceIcon />,
                   content: (
                     <>
-                      <div className="flex flex-col gap-1 space-y-2">
-                        <h1 className="text-lg font-bold">TPLDrifters</h1>
-                        <span>
-                          End-to-end 3D avatar creator with Blender-powered
-                          backend
-                        </span>
-                        <button
-                          className="flex w-full justify-center gap-2 rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
-                          onClick={() => {
-                            window.open('https://tpldrifters.com', '_blank')
-                          }}
-                        >
-                          <ArrowUpRightIcon className="size-5" />{' '}
-                          tpldrifters.com
-                        </button>
-                      </div>
-                      <div className="mt-2 flex flex-col gap-1 space-y-2">
-                        <h1 className="text-lg font-bold">Skybuds</h1>
-                        <span>
-                          A personal project integrating ThreeJS, NFTs and
-                          serverless functions
-                        </span>
-                        <button
-                          className="flex w-full justify-center gap-2 rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
-                          onClick={() => {
-                            window.open(
-                              'https://github.com/Benjythebee/skybuds',
-                              '_blank'
-                            )
-                          }}
-                        >
-                          <GithubIcon className="size-5" /> View Repo
-                        </button>
-                      </div>
-                      <div className="mt-2 flex flex-col gap-1 space-y-2">
-                        <h1 className="text-lg font-bold">RendrGen</h1>
-                        <span>
-                          A service that offers renders of Digital assets at an
-                          affordable price.
-                        </span>
-                        <button
-                          className="flex w-full justify-center gap-2 rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
-                          disabled={false}
-                          onClick={() => {
-                            window.open('https://rendrgen.com/', '_blank')
-                          }}
-                        >
-                          <ArrowUpRightIcon className="size-5" /> RendrGen.com
-                        </button>
-                      </div>
-                      <div className="mt-2 flex flex-col gap-1 space-y-2">
-                        <h1 className="text-lg font-bold">TongueUp</h1>
-                        <span>
-                          A small helpful mobile app for people in need of a
-                          reminder to put their tongue up on the roof of their
-                          mouth.
-                        </span>
-                        <button
-                          className="flex w-full justify-center gap-2 rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
-                          disabled={false}
-                          onClick={() => {
-                            window.open(
-                              'https://tongueup.benjylarcher.com/',
-                              '_blank'
-                            )
-                          }}
-                        >
-                          <ArrowUpRightIcon className="size-5" /> Checkout App
-                        </button>
-                      </div>
+                      {WhatImWorkingOnData.map((item) => (
+                        <WhatImWorkingOn key={item.title} {...item} />
+                      ))}
                     </>
                   ),
                   id: 'skybuds'
@@ -262,6 +195,27 @@ const Sidebar = () => {
                     </div>
                   ),
                   id: 'RendrGen'
+                },
+                {
+                  title: 'TPLDrifters',
+                  iconSrc: 'https://tpldrifters.com/favicon.ico',
+                  content: (
+                    <div className="flex flex-col gap-1 space-y-2">
+                      <span>
+                        End-to-end 3D avatar creator from NFTs with
+                        Blender-powered backend
+                      </span>
+                      <button
+                        className="w-full rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
+                        onClick={() => {
+                          window.open('https://tpldrifters.com/', '_blank')
+                        }}
+                      >
+                        tpldrifters.com
+                      </button>
+                    </div>
+                  ),
+                  id: 'TPLDrifters'
                 },
                 {
                   title: 'Ask ChatGPT about me',
@@ -343,6 +297,71 @@ const Socials = () => {
       >
         <Mail size={16} />
       </a>
+    </div>
+  )
+}
+
+//github.com/M3-org/CharacterStudio
+const WhatImWorkingOnData: {
+  title: string
+  description: string
+  link: string
+  linkLabel: string
+  icon: React.ReactNode
+}[] = [
+  {
+    title: 'Skybuds',
+    description:
+      'A personal project integrating ThreeJS, NFTs and serverless functions',
+    link: 'https://github.com/Benjythebee/skybuds',
+    linkLabel: 'View Repo',
+    icon: <GithubIcon className="size-5" />
+  },
+  {
+    title: 'Character Studio',
+    description:
+      'An Opensource project to make creating 3d characters more accessible.',
+    link: 'https://github.com/M3-org/CharacterStudio',
+    linkLabel: 'View Repo',
+    icon: <GithubIcon className="size-5" />
+  },
+  {
+    title: 'RendrGen',
+    description:
+      'A service that offers renders of Digital assets at an affordable price.',
+    link: 'https://rendrgen.com/',
+    linkLabel: 'RendrGen.com',
+    icon: <ArrowUpRightIcon className="size-5" />
+  },
+  {
+    title: 'TongueUp',
+    description:
+      'A small helpful mobile app for people in need of a reminder to put their tongue up on the roof of their mouth.',
+    link: 'https://tongueup.benjylarcher.com/',
+    linkLabel: 'Checkout App',
+    icon: <ArrowUpRightIcon className="size-5" />
+  }
+]
+
+export const WhatImWorkingOn = ({
+  title,
+  description,
+  link,
+  linkLabel,
+  icon
+}: (typeof WhatImWorkingOnData)[number]) => {
+  return (
+    <div className="mt-1 flex flex-col gap-1 space-y-2">
+      <h1 className="text-lg font-bold">{title}</h1>
+      <span>{description}</span>
+      <button
+        className="flex w-full justify-center gap-2 rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
+        onClick={() => {
+          window.open(link, '_blank')
+        }}
+      >
+        {icon} {linkLabel}
+      </button>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import {
   ArrowUpRightIcon,
   BriefcaseBusinessIcon,
+  LucideComputer,
   Star,
   University,
   X
@@ -23,13 +24,15 @@ export const Timeline = ({
       <BriefcaseBusinessIcon className="size-6" />
     ) : icon == 'education' ? (
       <University className="size-6" />
-    ) : (
+    ) : icon === 'bonus' ? (
       <Star className="size-6" />
+    ) : (
+      <LucideComputer className="size-6" />
     )
   }
 
   const getFontColor = (icon: 'work' | 'education' | 'bonus') => {
-    return icon == 'bonus' ? '#000' : '#011C27'
+    return icon == 'bonus' ? '#fff' : '#011C27'
   }
 
   const getCardColor = (icon: 'work' | 'education' | 'bonus') => {
@@ -37,7 +40,9 @@ export const Timeline = ({
       ? '#FECEE9'
       : icon == 'education'
         ? '#EB9FEF'
-        : '#545677'
+        : icon == 'bonus'
+          ? '#545677'
+          : '#9DE0FF'
   }
 
   return (
@@ -125,6 +130,14 @@ const elements: {
     icon: 'education'
   },
   {
+    title: 'Deployed First Android App',
+    subtitle: '',
+    date: '2016',
+    content:
+      'Deployed my first android app. An app to tranform your TV into a stroboscope. ',
+    icon: ''
+  },
+  {
     title: 'CFA level 1',
     subtitle: '',
     date: '2017',
@@ -144,7 +157,7 @@ const elements: {
     subtitle: 'Voxels.com (Startup)',
     date: '2020 - 2022',
     content:
-      'Backend, Front-end and Game development. Team management and project management.',
+      'Preact, Typescript, Solidity, Web3. Team management and project management.',
     icon: 'work'
   },
   {
@@ -153,7 +166,7 @@ const elements: {
     link: 'https://www.cyberbrokers.com/',
     date: '2022 - Present',
     content:
-      'Backend, Front-end and Project Ownership. Hand-built systems to create 3d assets in a backend.',
+      'Nextjs, React, Python, Nodejs, Leadership and Ownership. Hand-built systems to create 3d assets in a production pipeline.',
     icon: 'work'
   }
 ].reverse()
