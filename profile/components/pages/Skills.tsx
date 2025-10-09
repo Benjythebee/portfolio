@@ -258,7 +258,7 @@ const skills: {
   {
     category: 'Cloud & Hosting',
     title: 'AWS',
-    competencyRating: 4,
+    competencyRating: 5,
     likeRating: 1
   },
   {
@@ -288,7 +288,7 @@ const skills: {
   {
     category: 'CI/CD',
     title: 'Github Actions',
-    competencyRating: 3,
+    competencyRating: 5,
     likeRating: 3
   },
   {
