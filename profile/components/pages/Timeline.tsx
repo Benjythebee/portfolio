@@ -97,7 +97,7 @@ export const Timeline = ({
                     // eslint-disable-next-line tailwindcss/classnames-order, tailwindcss/no-custom-classname
                     className={` rounded-lg border-2 border-solid border-black px-2 py-1 text-sm hover:bg-[#f3b7d9]`}
                   >
-                    Cyberbrokers.com{' '}
+                    {element.buttonText || 'Visit'}{' '}
                     <ArrowUpRightIcon className="inline size-4" />
                   </button>
                 ) : (
@@ -116,6 +116,7 @@ export const Timeline = ({
 const elements: {
   title: string
   link?: string
+  buttonText?: string
   subtitle: string
   date: string
   content: string
@@ -164,6 +165,7 @@ const elements: {
     title: 'Senior Full Stack Developer',
     subtitle: 'Cyberbrokers.com',
     link: 'https://www.cyberbrokers.com/',
+    buttonText: 'Visit Cyberbrokers',
     date: '2022 - 2025',
     content:
       'Nextjs, React, Python, Nodejs, Leadership and Ownership. Hand-built systems to create 3d assets in a production pipeline.',
@@ -173,6 +175,7 @@ const elements: {
     title: 'Senior Full Stack Developer',
     subtitle: 'Authi.com',
     link: 'https://www.authi.com/',
+    buttonText: 'Visit Authi',
     date: '2025 - Present',
     content:
       'Spring Boot, Kotlin, Openapi, Nextjs, React. Building and maintaining a B2B SaaS product on top of Verifone Android devices.',
