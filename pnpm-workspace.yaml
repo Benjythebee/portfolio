@@ -3,5 +3,5 @@ overrides:
   semver: "7.8.1"
   obug: "2.1.1"
 onlyBuiltDependencies:
-  - "@swc/core"
-  - "react-vertical-timeline-component"
+  - "@swc/core@1.15.40"
+  - "react-vertical-timeline-component@3.5.3"
