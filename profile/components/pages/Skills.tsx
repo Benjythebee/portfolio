@@ -162,7 +162,12 @@ const skills: {
   { category: 'Programming Languages', title: 'Golang', competencyRating: 2 },
   { category: 'Programming Languages', title: 'C#', competencyRating: 2 },
   { category: 'Programming Languages', title: 'Java', competencyRating: 3 },
-
+  {
+    category: 'Programming Languages',
+    title: 'Kotlin',
+    likeRating: 4,
+    competencyRating: 4
+  },
   {
     category: 'Frameworks',
     title: 'Bun.JS',
