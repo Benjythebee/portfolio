@@ -4,6 +4,9 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "(cd ./profile && vite --host)",
     "dev:tongueup": "(cd ./tongueup && vite --host)",
