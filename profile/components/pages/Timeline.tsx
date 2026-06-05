@@ -164,9 +164,18 @@ const elements: {
     title: 'Senior Full Stack Developer',
     subtitle: 'Cyberbrokers.com',
     link: 'https://www.cyberbrokers.com/',
-    date: '2022 - Present',
+    date: '2022 - 2025',
     content:
       'Nextjs, React, Python, Nodejs, Leadership and Ownership. Hand-built systems to create 3d assets in a production pipeline.',
+    icon: 'work'
+  },
+  {
+    title: 'Senior Full Stack Developer',
+    subtitle: 'Authi.com',
+    link: 'https://www.authi.com/',
+    date: '2025 - Present',
+    content:
+      'Spring Boot, Kotlin, Openapi, Nextjs, React. Building and maintaining a B2B SaaS product on top of Verifone Android devices.',
     icon: 'work'
   }
 ].reverse()

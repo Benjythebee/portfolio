@@ -79,7 +79,6 @@ export const Accordion = ({ items }: AccordionProps) => {
   const [openItemId, setOpenItemId] = useState<string | null>(null)
 
   const handleToggle = (itemId: string) => {
-    console.log('itemId', itemId)
     setOpenItemId((prevId) => (prevId === itemId ? null : itemId))
   }
 

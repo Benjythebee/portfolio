@@ -218,6 +218,24 @@ const Sidebar = () => {
                   id: 'TPLDrifters'
                 },
                 {
+                  title: 'Authi',
+                  iconSrc: 'https://authi.com/favicon.ico',
+                  content: (
+                    <div className="flex flex-col gap-1 space-y-2">
+                      <span>Authentic Insights & Messaging</span>
+                      <button
+                        className="w-full rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
+                        onClick={() => {
+                          window.open('https://authi.com/', '_blank')
+                        }}
+                      >
+                        Authi.com
+                      </button>
+                    </div>
+                  ),
+                  id: 'Authi'
+                },
+                {
                   title: 'Ask ChatGPT about me',
                   iconSrc: () => <Sparkles />,
                   content: (
@@ -310,6 +328,20 @@ const WhatImWorkingOnData: {
   icon: React.ReactNode
 }[] = [
   {
+    title: 'Authi',
+    description:
+      'A personal project integrating ThreeJS, NFTs and serverless functions',
+    link: 'https://www.authi.com/',
+    linkLabel: 'View Authi',
+    icon: (
+      <img
+        src="https://authi.com/favicon.ico"
+        alt="Authi"
+        className="size-5 rounded-full"
+      ></img>
+    )
+  },
+  {
     title: 'Skybuds',
     description:
       'A personal project integrating ThreeJS, NFTs and serverless functions',
@@ -329,7 +361,7 @@ const WhatImWorkingOnData: {
     title: 'RendrGen',
     description:
       'A service that offers renders of Digital assets at an affordable price.',
-    link: 'https://rendrgen.com/',
+    link: 'https://github.com/Benjythebee/rendrgen',
     linkLabel: 'RendrGen.com',
     icon: <ArrowUpRightIcon className="size-5" />
   },
