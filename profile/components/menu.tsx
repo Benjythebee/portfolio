@@ -236,6 +236,27 @@ const Sidebar = () => {
                   id: 'Authi'
                 },
                 {
+                  title: 'BlameLoL',
+                  iconSrc: 'https://blamelol.com/favicon.svg',
+                  content: (
+                    <div className="flex flex-col gap-1 space-y-2">
+                      <span>
+                        Analyzes your recent League of Legends games and names
+                        the teammate to blame for your losses.
+                      </span>
+                      <button
+                        className="w-full rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
+                        onClick={() => {
+                          window.open('https://blamelol.com/', '_blank')
+                        }}
+                      >
+                        BlameLoL.com
+                      </button>
+                    </div>
+                  ),
+                  id: 'BlameLoL'
+                },
+                {
                   title: 'Ask ChatGPT about me',
                   iconSrc: () => <Sparkles />,
                   content: (
