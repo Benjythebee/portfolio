@@ -2,19 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="Jyben Larcher">
-    <meta name="description" content="TongueUp - A simple app to remind you where your tongue should be!" />
-    <meta name="keywords" content="Tongue,Speech,language,therapy,reminder,rappel,up,palate,langue" />
+    <meta name="author" content="Jyben Larcher" />
+    <meta name="description" content="TongueUp reminds you to keep your tongue on the roof of your mouth, with one-tap check-ins and a chart of your progress. Free on Android." />
+    <meta name="keywords" content="Tongue,tongue posture,mewing,palate,reminder,rappel,langue,palais" />
+    <meta name="theme-color" content="#FAF6F1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#131017" media="(prefers-color-scheme: dark)" />
+    <meta property="og:title" content="TongueUp — keep your tongue where it belongs" />
     <meta property="og:image" content="https://tongueup.benjylarcher.com/icon.png" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="A simple app to remind you where your tongue should be!" />
+    <meta property="og:description" content="Gentle reminders, one-tap check-ins and a chart of your tongue posture. Free on Android." />
     <meta property="og:url" content="https://tongueup.benjylarcher.com/" />
-    <link rel="icon" type="image/png" href="/favicon.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>TongueUp - Where is your tongue?</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preload" href="/font/Inter-VariableFont.ttf" as="font" type="font/ttf" crossorigin />
+    <title>TongueUp — Where is your tongue?</title>
+    <script>
+      // Apply the saved / system theme before first paint to avoid a light flash
+      try {
+        var saved = localStorage.getItem('tongueup-site-theme')
+        var dark = saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches
+        if (dark) document.documentElement.classList.add('dark')
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

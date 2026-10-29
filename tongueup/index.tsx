@@ -6,15 +6,19 @@ import './i18n'
 import './global.css'
 import App from './App'
 import PrivacyPolicyPage from './privacy'
+import { ThemeProvider } from './components/theme'
+
 const container = document.getElementById('root') as HTMLDivElement
-container.className = 'w-full h-full font-inter'
 const root = createRoot(container)
 
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/privacy" element={<PrivacyPolicyPage />} />
-    </Routes>
-  </BrowserRouter>
+  <ThemeProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/privacy" element={<PrivacyPolicyPage />} />
+        {/* Home also answers the store listing's /support link */}
+        <Route path="*" element={<App />} />
+      </Routes>
+    </BrowserRouter>
+  </ThemeProvider>
 )
