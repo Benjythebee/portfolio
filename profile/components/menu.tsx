@@ -257,6 +257,28 @@ const Sidebar = () => {
                   id: 'BlameLoL'
                 },
                 {
+                  title: 'Tendies Brawl',
+                  iconSrc: 'https://tendiesbrawl.com/favicon.png',
+                  content: (
+                    <div className="flex flex-col gap-1 space-y-2">
+                      <span>
+                        A free multiplayer stock trading game in the browser:
+                        trade against friends and AI bots on a live order book
+                        and finish with the best P&amp;L.
+                      </span>
+                      <button
+                        className="w-full rounded-md bg-blue-950/70 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-950/90"
+                        onClick={() => {
+                          window.open('https://tendiesbrawl.com/', '_blank')
+                        }}
+                      >
+                        TendiesBrawl.com
+                      </button>
+                    </div>
+                  ),
+                  id: 'TendiesBrawl'
+                },
+                {
                   title: 'Ask ChatGPT about me',
                   iconSrc: () => <Sparkles />,
                   content: (

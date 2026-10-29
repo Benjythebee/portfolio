@@ -18,7 +18,11 @@
 
 ## Projects
 
+- [Tendies Brawl](https://tendiesbrawl.com/): free multiplayer stock trading game in the browser; trade one stock against friends and AI bots on a live order book
+- [BlameLoL](https://blamelol.com/): analyzes your recent League of Legends games and names the teammate to blame for your losses
 - [TongueUp](https://tongueup.benjylarcher.com/): free Android app that reminds you to keep good tongue posture
+- [TPLDrifters](https://tpldrifters.com/): end-to-end 3D avatar creator from NFTs, with a Blender-powered backend
+- [Character Studio](https://github.com/M3-org/CharacterStudio): open-source project making 3D character creation more accessible
 - [SkyBuds](https://skybuds.benjylarcher.com): personal project combining Three.js, NFTs and serverless functions
 - [RendrGen](https://rendrgen.com/): affordable renders of digital assets for portfolios and listings
 
