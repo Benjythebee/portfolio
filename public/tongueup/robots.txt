@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+# The live demo is embedded on the home page; it is not a page on its own
+Disallow: /demo/
+
+Sitemap: https://tongueup.benjylarcher.com/sitemap.xml

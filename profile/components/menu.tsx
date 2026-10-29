@@ -84,7 +84,7 @@ const Sidebar = () => {
           <div className="mb-2 size-24 overflow-hidden rounded-full bg-white backdrop-blur-xl">
             <img
               src="/benj.jpg"
-              alt="Profile"
+              alt="Benjy Larcher"
               className="size-full object-cover"
             />
           </div>

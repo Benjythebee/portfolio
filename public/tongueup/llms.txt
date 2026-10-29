@@ -1,0 +1,15 @@
+# TongueUp
+
+> TongueUp (French: Pense Langue) is a free Android app that reminds you to keep your tongue on the roof of your mouth. It sends gentle reminders through the day, lets you check in with one tap, and charts your tongue posture over time. No account, no ads, no tracking, and it works offline.
+
+- Price: free (no ads, no subscription, no in-app purchases)
+- Platform: Android only (no iPhone version yet)
+- Languages: English and French
+- Not a medical app: it is a habit reminder and gives no medical advice
+
+## Links
+
+- [Home page with features and FAQ](https://tongueup.benjylarcher.com/)
+- [Google Play listing](https://play.google.com/store/apps/details?id=com.jybenlarcher.tongueup)
+- [Privacy policy](https://tongueup.benjylarcher.com/privacy)
+- Contact: jybenlarcher@gmail.com

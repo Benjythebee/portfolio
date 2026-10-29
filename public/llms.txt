@@ -1,0 +1,31 @@
+# Benjy Larcher
+
+> Benjy Larcher is a senior full-stack software engineer experienced in leading teams and shipping end-to-end products: microservices and DevOps, 3D rendering (Three.js), Web3 integrations and real-time systems.
+
+## Experience
+
+- 2025 - present: Senior Full Stack Developer at Authi.com
+- 2022 - 2025: Senior Full Stack Developer at Cyberbrokers.com
+- 2020 - 2022: Product Owner and Full Stack Developer at Voxels.com (formerly Cryptovoxels)
+- Master in Finance, Massey University, Auckland (2018 - 2020); Bachelor in Economics, University of Otago (2013 - 2016)
+
+## Skills
+
+- Languages: TypeScript / JavaScript, Python, Kotlin, Go, C#, Solidity
+- Frameworks: React, React Native, Next.js, Vue.js, GraphQL, Web3, Spring Boot, Node / Bun
+- Platforms: AWS (EC2, S3, Lambda), Google Cloud, Cloudflare, DigitalOcean, Vercel, Prometheus, Grafana
+- Databases: PostgreSQL, MySQL, MongoDB, Redis, Firebase
+
+## Projects
+
+- [TongueUp](https://tongueup.benjylarcher.com/): free Android app that reminds you to keep good tongue posture
+- [SkyBuds](https://skybuds.benjylarcher.com): personal project combining Three.js, NFTs and serverless functions
+- [RendrGen](https://rendrgen.com/): affordable renders of digital assets for portfolios and listings
+
+## Links
+
+- [GitHub](https://github.com/Benjythebee)
+- [LinkedIn](https://www.linkedin.com/in/benjaminmclarcher/)
+- [X / Twitter](https://x.com/benjythebee)
+- [npm](https://www.npmjs.com/~fayelure)
+- Email: jybenlarcher@gmail.com
