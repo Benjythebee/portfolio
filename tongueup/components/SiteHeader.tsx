@@ -40,6 +40,9 @@ export const SiteHeader = () => {
           <a href="/#privacy" className="rounded-full px-3 py-2 hover:text-ink">
             {t('nav.privacy')}
           </a>
+          <a href="/#faq" className="rounded-full px-3 py-2 hover:text-ink">
+            {t('nav.faq')}
+          </a>
         </nav>
 
         <div className="ml-auto flex items-center gap-2 md:ml-2">

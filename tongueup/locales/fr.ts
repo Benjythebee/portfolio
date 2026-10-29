@@ -10,6 +10,7 @@ export default {
     features: 'Fonctionnalités',
     howItWorks: 'Comment ça marche',
     privacy: 'Confidentialité',
+    faq: 'FAQ',
     language: 'Langue',
     lightTheme: 'Passer au thème clair',
     darkTheme: 'Passer au thème sombre'
@@ -28,7 +29,7 @@ export default {
   demo: {
     live: 'Démo en direct',
     title: "L'appli Pense Langue en direct",
-    hint: "C'est la vraie appli, qui tourne dans ton navigateur. Essaie-la !",
+    hint: "C'est la vraie appli, qui tourne dans ton navigateur. Essaie-la !",
     reset: 'Réinitialiser la démo',
     note: "Les notifications ne fonctionnent que dans l'appli Android."
   },
@@ -42,7 +43,7 @@ export default {
     },
     catchUp: {
       title: 'Rattrapage',
-      body: 'Loin de ton téléphone ? Note après coup les fois où tu as pensé à ta langue.'
+      body: 'Loin de ton téléphone ? Note après coup les fois où tu as pensé à ta langue.'
     },
     reminders: {
       title: 'Des rappels à ton rythme',
@@ -70,7 +71,7 @@ export default {
     },
     step2: {
       title: 'Reçois un petit rappel',
-      body: 'Une notification te pose la seule question qui compte : où est ta langue ?'
+      body: 'Une notification te pose la seule question qui compte : où est ta langue ?'
     },
     step3: {
       title: 'Note et corrige',
@@ -85,8 +86,48 @@ export default {
     noAds: 'Sans pub',
     readPolicy: 'Lire la politique de confidentialité'
   },
+  faq: {
+    eyebrow: 'FAQ',
+    title: 'Questions fréquentes',
+    more: 'Une autre question ?',
+    contact: 'Écris-moi',
+    items: {
+      position: {
+        q: 'Où doit se placer ma langue ?',
+        a: "Contre le palais, en douceur, avec la pointe juste derrière les dents du haut, sans appuyer dessus. Garde les lèvres fermées et respire par le nez. Pense Langue t'aide à remarquer où est ta langue dans la journée, pour que la bonne position devienne un réflexe."
+      },
+      medical: {
+        q: 'Est-ce une appli médicale ?',
+        a: "Non. C'est un simple outil de rappel, qui ne donne aucun conseil médical. En cas de douleur à la mâchoire, de difficulté à respirer par le nez ou de souci d'élocution, parles-en à un dentiste, un orthodontiste ou un orthophoniste."
+      },
+      free: {
+        q: "C'est vraiment gratuit ?",
+        a: "Oui. Pas de pub, pas d'abonnement, pas d'achat intégré."
+      },
+      iphone: {
+        q: 'Existe-t-il une version iPhone ?',
+        a: 'Pas pour le moment. Pense Langue est disponible sur Android, via Google Play.'
+      },
+      frequency: {
+        q: 'À quelle fréquence vais-je recevoir des rappels ?',
+        a: 'Comme tu veux : toutes les 15 ou 30 minutes, toutes les heures, toutes les 2, 4, 6 ou 12 heures, ou une fois par jour. Les heures calmes gardent tes nuits sans rappel.'
+      },
+      late: {
+        q: 'Mes rappels arrivent en retard, ou pas du tout. Que faire ?',
+        a: "Dans l'onglet Rappels, touche « Autoriser l'heure exacte » et exclus l'appli de l'optimisation de la batterie. Si ton téléphone les retarde encore, active « Heure stricte ». Forcer l'arrêt de l'appli suspend les rappels jusqu'à ce que tu la rouvres."
+      },
+      offline: {
+        q: 'Faut-il un compte ou une connexion internet ?',
+        a: "Non. Tout est enregistré sur ton téléphone et l'appli fonctionne entièrement hors ligne."
+      },
+      erase: {
+        q: 'Comment effacer mes données ?',
+        a: "Ouvre les Paramètres de l'appli et touche « Effacer tes données », ou désinstalle-la simplement. Rien n'est conservé ailleurs."
+      }
+    }
+  },
   cta: {
-    title: 'Prêt à prendre le réflexe ?',
+    title: 'Prêt à prendre le réflexe ?',
     body: 'Pense Langue est gratuit sur Google Play.'
   },
   footer: {

@@ -7,6 +7,7 @@ import {
   LucideIcon,
   MoonStar,
   NotebookPen,
+  Plus,
   ShieldCheck,
   SunMoon,
   UserRoundX
@@ -15,7 +16,7 @@ import { ReactNode, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { GooglePlayBadge } from './components/GooglePlayBadge'
 import { PhoneDemo } from './components/PhoneDemo'
-import { SiteFooter } from './components/SiteFooter'
+import { CONTACT_EMAIL, SiteFooter } from './components/SiteFooter'
 import { SiteHeader } from './components/SiteHeader'
 
 type Tone = 'primary' | 'success'
@@ -81,6 +82,7 @@ function App() {
         <Features />
         <HowItWorks />
         <Privacy />
+        <Faq />
         <CallToAction />
       </main>
       <SiteFooter />
@@ -250,6 +252,55 @@ const Privacy = () => {
             ))}
           </ul>
         </div>
+      </div>
+    </section>
+  )
+}
+
+const FAQ_ITEMS = [
+  'position',
+  'medical',
+  'free',
+  'iphone',
+  'frequency',
+  'late',
+  'offline',
+  'erase'
+] as const
+
+const Faq = () => {
+  const { t } = useTranslation()
+  return (
+    <section id="faq" className="scroll-mt-16 pb-20 sm:pb-24">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6">
+        <SectionHeading eyebrow={t('faq.eyebrow')} title={t('faq.title')} />
+        <div className="mt-12 flex flex-col gap-3">
+          {FAQ_ITEMS.map((key) => (
+            <details
+              key={key}
+              className="group rounded-[18px] border border-line bg-surface shadow-card"
+            >
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-5 py-4 font-semibold [&::-webkit-details-marker]:hidden">
+                {t(`faq.items.${key}.q`)}
+                <span className="grid size-8 shrink-0 place-items-center rounded-full bg-primary-soft text-primary transition group-open:rotate-45">
+                  <Plus className="size-4" strokeWidth={2.4} />
+                </span>
+              </summary>
+              <p className="-mt-1 px-5 pb-5 leading-relaxed text-ink-2">
+                {t(`faq.items.${key}.a`)}
+              </p>
+            </details>
+          ))}
+        </div>
+        <p className="mt-8 text-center text-ink-2">
+          {t('faq.more')}{' '}
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="font-semibold text-primary underline-offset-2 hover:underline"
+          >
+            {t('faq.contact')}
+          </a>
+        </p>
       </div>
     </section>
   )
